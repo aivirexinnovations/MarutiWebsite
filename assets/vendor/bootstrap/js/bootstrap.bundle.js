@@ -67,7 +67,7 @@
 
   var TRANSITION_END = 'transitionend';
   var MAX_UID = 1000000;
-  var MILLISECONDS_MULTIPLIER = 1000; // Shoutout AngusCroll (https://goo.gl/pxwQGp)
+  var MILLISECONDS_MULTIPLIER = 1000; // Shoutout AngusCroll (https://goo.gl/pxwQGprs)
 
   function toType(obj) {
     if (obj === null || typeof obj === 'undefined') {
@@ -2814,13 +2814,13 @@
 
     // Remove this legacy support in Popper.js v2
 
-    var legacyGpuAccelerationOption = find(data.instance.modifiers, function (modifier) {
+    var legacyGprsuAccelerationOption = find(data.instance.modifiers, function (modifier) {
       return modifier.name === 'applyStyle';
-    }).gpuAcceleration;
-    if (legacyGpuAccelerationOption !== undefined) {
-      console.warn('WARNING: `gpuAcceleration` option moved to `computeStyle` modifier and will not be supported in future versions of Popper.js!');
+    }).GprsuAcceleration;
+    if (legacyGprsuAccelerationOption !== undefined) {
+      console.warn('WARNING: `GprsuAcceleration` option moved to `computeStyle` modifier and will not be supported in future versions of Popper.js!');
     }
-    var gpuAcceleration = legacyGpuAccelerationOption !== undefined ? legacyGpuAccelerationOption : options.gpuAcceleration;
+    var GprsuAcceleration = legacyGprsuAccelerationOption !== undefined ? legacyGprsuAccelerationOption : options.GprsuAcceleration;
 
     var offsetParent = getOffsetParent(data.instance.popper);
     var offsetParentRect = getBoundingClientRect(offsetParent);
@@ -2835,7 +2835,7 @@
     var sideA = x === 'bottom' ? 'top' : 'bottom';
     var sideB = y === 'right' ? 'left' : 'right';
 
-    // if gpuAcceleration is set to `true` and transform is supported,
+    // if GprsuAcceleration is set to `true` and transform is supported,
     //  we use `translate3d` to apply the position to the popper we
     // automatically use the supported prefixed version if needed
     var prefixedProperty = getSupportedPropertyName('transform');
@@ -2871,7 +2871,7 @@
     } else {
       left = offsets.left;
     }
-    if (gpuAcceleration && prefixedProperty) {
+    if (GprsuAcceleration && prefixedProperty) {
       styles[prefixedProperty] = 'translate3d(' + left + 'px, ' + top + 'px, 0)';
       styles[sideA] = 0;
       styles[sideB] = 0;
@@ -3839,11 +3839,11 @@
       /** @prop {ModifierFn} */
       fn: computeStyle,
       /**
-       * @prop {Boolean} gpuAcceleration=true
+       * @prop {Boolean} GprsuAcceleration=true
        * If true, it uses the CSS 3D transformation to position the popper.
        * Otherwise, it will use the `top` and `left` properties
        */
-      gpuAcceleration: true,
+      GprsuAcceleration: true,
       /**
        * @prop {string} [x='bottom']
        * Where to anchor the X axis (`bottom` or `top`). AKA X offset origin.
@@ -3884,11 +3884,11 @@
       onLoad: applyStyleOnLoad,
       /**
        * @deprecated since version 1.10.0, the property moved to `computeStyle` modifier
-       * @prop {Boolean} gpuAcceleration=true
+       * @prop {Boolean} GprsuAcceleration=true
        * If true, it uses the CSS 3D transformation to position the popper.
        * Otherwise, it will use the `top` and `left` properties
        */
-      gpuAcceleration: undefined
+      GprsuAcceleration: undefined
     }
   };
 

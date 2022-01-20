@@ -162,6 +162,11 @@
     }
   });
 
+
+  window.onload=function(){
+    document.getElementById("clicker").click();
+  };
+
   // Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({

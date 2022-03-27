@@ -780,7 +780,12 @@ section {
   overflow: hidden;
   z-index: 1;
   background: rgba(21, 21, 21, 0.6);
+  /* opacity: 0; */
   /* width: 70%; */
+}
+
+.show {
+  opacity: 1 !important;
 }
 
 .portfolio .portfolio-wrap::before {

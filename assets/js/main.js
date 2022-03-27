@@ -162,10 +162,20 @@
     }
   });
 
+  // Array.from(document.querySelectorAll('.portfolio-wrap'))
+  //   .map(e => {
+  //     const img = e.querySelector('img');
+  //     img.onload = () => {
+  //       e.classList.add('show')
+  //     }
+  //   })
+
 
   window.onload=function(){
     document.getElementById("clicker").click();
   };
+
+
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
@@ -182,6 +192,7 @@
       });
       aos_init();
     });
+
 
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {

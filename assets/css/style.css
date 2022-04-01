@@ -21,34 +21,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  display: none;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
-}
 
-.back-to-top i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  background: #E83A59;
-  color: #151515;
-  transition: all 0.4s;
-}
 
-.back-to-top i:hover {
-  background: #151515;
-  color: #E83A59;
-}
+
 
 /*--------------------------------------------------------------
 # Preloader
@@ -1587,4 +1562,25 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #E83A59;
   border-radius: 30px;
-} 
+}
+
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+ 
+}
+
+.my-float{
+	margin-top:16px;
+}

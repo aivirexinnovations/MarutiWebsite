@@ -741,8 +741,12 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #151515;
-  background: #E83A59;
+  color: #151515 !important;
+  background: #E83A59; 
+}
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-inactive {
+  color: #e6dbdb;
+  /* background: #E83A59; */
 }
 
 .portfolio #portfolio-flters li:last-child {
